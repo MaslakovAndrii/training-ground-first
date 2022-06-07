@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid green;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__buttons {
+     display: flex;
+}
+
+.page__wrapper {
+     display: flex;
+     justify-content: center;
+     margin: 20px 0;
+}
+
+.page {
+     cursor: pointer;
+     border: 1px solid green;
+     padding: 5px 10px;
+}
+
+.page__active {
+     border: 2px solid orange;
+     font-weight: bold;
+     transform: scale(1.1);
+}
+
+.navbar {
+     height: 50px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     padding: 0 15px;
+     background-color: rgba(128, 128, 128, 0.621);
+}
+
+.navbar__links {
+     margin-left: auto;
+}
+.navbar__links *:not(:last-child) {
+     margin-right: 10px;
+}
